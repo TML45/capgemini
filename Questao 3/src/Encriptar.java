@@ -19,10 +19,7 @@ public class Encriptar {
 		coluna = (int) Math.ceil(Math.sqrt(tamanho));
 		linha = coluna - 1;
 		if (linha * coluna < sentence.length()) {
-			coluna++;
-			if (linha * coluna < sentence.length()) {
-				linha++;
-			}
+			linha++;
 		}
 		char s[][] = new char[linha][coluna];
 		char f[] = new char[linha * coluna + coluna - 1];
@@ -35,6 +32,12 @@ public class Encriptar {
 				}
 			}
 		}
+//		System.out.println(new String(s));
+//		StringBuilder sb = new StringBuilder();
+//	    for (char[] subArray : s) {
+//	        sb.append(subArray);
+//	    }
+//	    System.out.println(sb);
 
 		for (int i = 0; i < coluna; i++) {
 			for (int j = 0; j < linha; j++) {
