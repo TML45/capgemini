@@ -2,7 +2,6 @@
 public class Pares {
 	int[] n;
 	int x;
-	int count = 0;
 
 	public Pares() {
 
@@ -15,6 +14,7 @@ public class Pares {
 	}
 	
 	public int fazerDiferencas() {
+		int count = 0;
 		for(int i = 0; i < n.length; i++) {
 			for( int j = i + 1; j < n.length; j++) {
 				if(n[i]-n[j] == x || n[j]-n[i] == x) {
@@ -26,6 +26,7 @@ public class Pares {
 	}
 	
 	public int fazerDiferencas2() {
+		int count = 0;
 		for(int i = 0; i < n.length; i++) {
 			for( int j = i + 1; j < n.length; j++) {
 				if(Math.abs(n[i]-n[j]) == x) {
