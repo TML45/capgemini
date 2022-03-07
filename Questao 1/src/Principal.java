@@ -10,6 +10,9 @@ public class Principal {
 		lista2.lista = new int[] {9, 2, 1, 4, 6};
 		System.out.println(lista2.encontrarMediana());
 		
+		Mediana lista3 = new Mediana(new int[]{9, 2, 1, 4, 6, 0, -2});
+		System.out.println(lista3.encontrarMediana2());
+		
 		
 	}
 
