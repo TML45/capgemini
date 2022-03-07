@@ -8,7 +8,7 @@ class Teste {
 	void test() {
 		Encriptar sentence1 = new Encriptar("tenha um bom dia");
 		System.out.println(sentence1.encriptando());
-		assertEquals(sentence1.encriptando(), "tenhaumbomdia");
+		assertEquals(sentence1.encriptando(), 4);
 	}
 
 }
